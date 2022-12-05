@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    
+    <title>Playfair</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="home.html">HOME</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="theory.html">Theory <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Simulation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ABOUTUS.HTML">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="assignment.html">Assignment</a>
+            </li>
+           
+           
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <h1 class="text-center mt-4">Playfair cipher</h1>
+      <br />
+      
+    </header>
+
+    <main class="container d-flex justify-content-center mt-5">
+      <div class="row">
+        <div id="wrapper" class="col-xs-9 col-xs-9 col-sm-offset-9">
+          <div class="form-group">
+            <label class="control-label">Key word:</label>
+            <input
+              id="key"
+              type="text"
+              class="form-control"
+              placeholder="Enter key"
+              required
+            />
+            <label class="control-label">Word or string:</label>
+            <input
+              id="String"
+              type="text"
+              class="form-control otstup"
+              placeholder="Enter a word or string"
+            />
+            <div>
+              <button
+                class="btn btn-primary form-control"
+                onclick="processKey(), cipher()"
+              >
+                Encrypt
+              </button>
+            </div>
+            <div>
+              <h4 class="text-center" id="printValue"></h4>
+            </div>
+            <button
+              class="btn btn-success form-control"
+              onclick="deCodeCipher()"
+            >
+              Decrypt
+            </button>
+          </div>
+          <div>
+            <h4 class="text-center" id="printDeCode"></h4>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

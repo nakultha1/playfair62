@@ -1,0 +1,13 @@
+body {
+    font-family: "Helvetica-Neue", Ultra;
+    font-size: 16px;
+    background: linear-gradient(to left, #6c47cf73 , #d8dfe9);
+  }
+  #wrapper {
+    background: white;
+    border-radius: 5px;
+    padding: 1.2rem
+  }
+  .otstup {
+    margin-bottom: 20px;
+  }
